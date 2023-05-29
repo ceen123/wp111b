@@ -40,6 +40,7 @@
         a:hover {
             text-decoration: underline;
         }
+		
     </style>
 	 
 <head>
@@ -51,6 +52,29 @@
         <h1>Welcome</h1>
         <p>Hello, my name is vincent nice to meet you!!!</p>
 		<img src="cat1.jpg">
+
+	
+
+	<form id="nameForm">
+        <input type="text" id="nameInput" placeholder="Enter your name" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+	
+        <h1 id="helloText" style="display:none;">Hello, <span id="nameOutput"></span>!</h1>
     </div>
+
+
+<script>
+document.getElementById("nameForm").addEventListener("submit", function(event) {
+			event.preventDefault();
+            var name = document.getElementById("nameInput").value;
+            document.getElementById("nameOutput").textContent = name;
+            document.getElementById("nameForm").style.display = "none";
+			document.getElementById("helloText").style.display = "block";
+        });
+</script>
+	
+	
 </body>
 </html>
