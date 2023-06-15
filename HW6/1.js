@@ -8,8 +8,8 @@ function vadd(a, b) {
   return result;
 }
 
-const vectorA = [1, 2, 3];
-const vectorB = [4, 5, 6];
+const vectorA = [1, 2];
+const vectorB = [5, 6];
 
 const sum = vadd(vectorA, vectorB);
 console.log("the sum is:", sum);
