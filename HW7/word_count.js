@@ -12,3 +12,7 @@ function countWords(list) {
 
   return countMap;
 }
+
+var list = ['a', 'dog', 'chase', 'a', 'cat'];
+var cmap = countWords(list);
+console.log(cmap);
