@@ -1,10 +1,11 @@
 function repeat(f, n) {
-  const result = [];
+  let r = [];
   for (let i = 0; i < n; i++) {
-    result.push(f());
+    r[i]=Math.random();
+    f=r[i];
   }
-  return result;
+  return r;
 }
 
-const randomNumbers = repeat(Math.random, 10);
-console.log(randomNumbers);
+var f , n=10;
+console.log(repeat(f,n));
